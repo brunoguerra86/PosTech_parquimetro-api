@@ -6,27 +6,27 @@ Este projeto é uma API desenvolvida com Java e Spring Boot, designada para gere
 
 ### Registro de Clientes e Veículos
 
-| Verbo | Rota                           | Descrição                    |
-|:--:|:----------------------------------|------------------------------|
- POST  | /clientes                       | 	Cadastra um cliente         |          
-  GET  | /clientes/{id_cliente}          | 	Lista um cliente            |
- GET   | /clientes/{id_cliente}/veiculos | Lista veículos de um cliente | 
- POST  | /veiculos	                     | Cadastra um veículo          |
+| Verbo | Rota                            | Descrição                    |
+|:-----:|:--------------------------------|------------------------------|
+| POST  | /clientes                       | 	Cadastra um cliente         |
+|  GET  | /clientes/{id_cliente}          | 	Lista um cliente            |
+|  GET  | /clientes/{id_cliente}/veiculos | Lista veículos de um cliente |
+| POST  | /veiculos	                      | Cadastra um veículo          |
 
 
 ### Controle de Tempo Estacionado 
-| Verbo | Rota                                              | Descrição                                               |
-|:-----:|:--------------------------------------------------|---------------------------------------------------------|
-| POST  | /sessoesestacionamentos                           | Cadastra um cliente                                     |
-| PUT  | /sessoesestacionamentos{id_sessao_estacionamento} | Atualiza com data fim do período para período variável  |
-| GET   | /sessoesestacionamentos{id_sessao_estacionamento}	| Lista informações da sessão de estacionamento        | 
+| Verbo | Rota                                               | Descrição                                              |
+|:-----:|:---------------------------------------------------|--------------------------------------------------------|
+| POST  | /sessoesestacionamentos                            | Cadastra um cliente                                    |
+|  PUT  | /sessoesestacionamentos{id_sessao_estacionamento}  | Atualiza com data fim do período para período variável |
+|  GET  | /sessoesestacionamentos{id_sessao_estacionamento}  | Lista informações da sessão de estacionamento          | 
 
 
 ### Registro de Recibo após Pagamento
 
-| Verbo | Rota    | Descrição                            |
-|:--:|:-----------|--------------------------------------|
- POST  | /recibos | Cadastra um recibo de estacionamento |          
+| Verbo | Rota     | Descrição                            |
+|:-----:|:---------|--------------------------------------|
+| POST  | /recibos | Cadastra um recibo de estacionamento |          
 
 
 ## Tecnologias Utilizadas
