@@ -5,8 +5,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
-
 @Document   //anotação para o MongoDB
 @Data       //anotação para o Lombok
 public class Cliente {
@@ -20,5 +18,5 @@ public class Cliente {
     private Integer codTipoPagamentoPreferencial;
 
     @DBRef
-    private List<Veiculo> listaVeiculos;
+    private Veiculo veiculo;
 }

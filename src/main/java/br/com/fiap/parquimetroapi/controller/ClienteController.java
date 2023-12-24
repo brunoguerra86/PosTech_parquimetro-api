@@ -1,6 +1,7 @@
 package br.com.fiap.parquimetroapi.controller;
 
 import br.com.fiap.parquimetroapi.model.Cliente;
+import br.com.fiap.parquimetroapi.model.Veiculo;
 import br.com.fiap.parquimetroapi.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,4 +30,8 @@ public class ClienteController {
         return this.clienteService.findById(id);
     }
 
+    @PutMapping("/{id}")
+    public void atualizarCliente(@PathVariable String id, @RequestBody Veiculo veiculo){
+        this.clienteService.atualizarClienteComVeiculo(id, veiculo);
+    }
 }
