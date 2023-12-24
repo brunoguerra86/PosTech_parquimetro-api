@@ -2,6 +2,7 @@ package br.com.fiap.parquimetroapi.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document   //anotação para o MongoDB
@@ -15,4 +16,7 @@ public class Cliente {
     private String telefone;
     private String email;
     private Integer codTipoPagamentoPreferencial;
+
+    @DBRef
+    private Veiculo veiculo;
 }
